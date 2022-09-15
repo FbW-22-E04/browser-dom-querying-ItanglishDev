@@ -16,5 +16,6 @@ for (const el of menuHeadings) {
 
   el.style.color = 'red'
   el.style.fontFamily = 'Times New Roman'
-
+  el.style.fontSize = "1.6rem"
 }
+
