@@ -18,6 +18,3 @@ for (const el of menuHeadings) {
   el.style.fontFamily = 'Times New Roman'
 
 }
-
-// }
-// menuHeadings.style.color = 'red'
