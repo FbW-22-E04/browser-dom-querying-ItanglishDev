@@ -9,11 +9,15 @@ const hOne = document.querySelector('h1')
 
 hOne.style.textAlign = 'center'
 
-const menuHeadings = document.querySelector('category')
+const menuHeadings = document.querySelectorAll('.category')
 
 // if (menuHeadings) {
+for (const el of menuHeadings) {
 
-menuHeadings.style.color = 'blue'
-// menuHeadings.style.fontSize = 20rem
+  el.style.color = 'red'
+  el.style.fontFamily = 'Times New Roman'
+
+}
+
 // }
 // menuHeadings.style.color = 'red'
