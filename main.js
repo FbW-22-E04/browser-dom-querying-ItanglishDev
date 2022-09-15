@@ -15,4 +15,8 @@
 
 // newSomething.style.fontFamily = 'Times'
 
-document.body.style.fontFamily = 'Impact, Charcoal, sans-serif'
+const body = document.querySelector('body')
+
+body.style.fontFamily = 'Arial'
+
+// document.body.style.fontFamily = '
