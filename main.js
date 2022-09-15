@@ -19,3 +19,18 @@ for (const el of menuHeadings) {
   el.style.fontSize = "1.6rem"
 }
 
+
+const randomColours = ['blue', 'green', 'magenta', 'purple']
+
+const unorderedList = document.querySelectorAll('.food-category')
+
+function colorGenerator() {
+
+  for (const el of unorderedList) {
+
+    el.style.color = randomColours[Math.floor(Math.random() * 3 + 1)]
+  }
+
+}
+
+colorGenerator()
