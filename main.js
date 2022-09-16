@@ -44,25 +44,29 @@ colorGenerator()
 
 // unorderedList.style.display = 'flex'
 const mainHtml = document.querySelector('.main')
-
-
+const footer = document.querySelector('footer')
+const footerElements = document.getElementsByClassName('footer .food-desc')
 
 function modifyForDesktop(elem) {
   if (elem.matches) {
     mainHtml.style.display = 'flex'
     mainHtml.style.justifyContent = 'space-around'
+    // footer.style.flexDirection = 'row'
+    footer.style.display = 'flex'
+    // footerElements.style.padding = '2px'
+    // footerElements.style.justifyContent = 'space-between'
 
   }
   else {
+    mainHtml.style.flexDirection = 'column'
 
     mainHtml.style.display = 'flex'
-    mainHtml.style.flexDirection = 'column'
     // mainHtml.style.alignItems = 'center'
 
 
   }
 }
-const atDeskTop = window.matchMedia('(min-width: 700px)')
+const atDeskTop = window.matchMedia('(min-width: 600px)')
 
 atDeskTop.addListener(modifyForDesktop)
 modifyForDesktop(atDeskTop)
@@ -79,6 +83,10 @@ allergies.style.listStyleType = 'none'
 const allergiesEven = document.querySelector('.allergy-warning li:nth-child(even)')
 
 allergiesEven.style.backgroundColor = 'lightgreen'
+allergiesEven.style.maxWidth = '95%'
 
 
+
+// footer.style.flexDirection = 'column'
+// footer.style.display = 'flex'
 
