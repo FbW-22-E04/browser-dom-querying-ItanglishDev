@@ -2,7 +2,7 @@
 const body = document.querySelector('body')
 
 body.style.fontFamily = 'Arial'
-
+body.style.textAlign = 'center'
 // document.body.style.fontFamily = '
 
 const hOne = document.querySelector('h1')
@@ -18,7 +18,6 @@ for (const el of menuHeadings) {
   el.style.fontFamily = 'Times New Roman'
   el.style.fontSize = "1.6rem"
 }
-
 
 const randomColours = ['blue', 'green', 'magenta', 'purple']
 
@@ -53,8 +52,14 @@ function modifyForDesktop(elem) {
 
   }
 }
-const atDeskTop = window.matchMedia('(min-width: 600px)')
+const atDeskTop = window.matchMedia('(min-width: 700px)')
 
 atDeskTop.addListener(modifyForDesktop)
 modifyForDesktop(atDeskTop)
+
+const warningAtEnd = document.getElementById('warning')
+
+warningAtEnd.style.fontSize = '2rem'
+
+
 
