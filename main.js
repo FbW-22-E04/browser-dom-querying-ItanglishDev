@@ -33,13 +33,13 @@ function colorGenerator() {
 }
 colorGenerator()
 
+// unorderedList.style.flexDirection = 'row'
+
+// unorderedList.style.display = 'flex'
 const mainHtml = document.querySelector('.main')
 
 mainHtml.style.display = 'flex'
 mainHtml.style.justifyContent = 'center'
 
-// unorderedList.style.flexDirection = 'row'
-
-// unorderedList.style.display = 'flex'
 
 
