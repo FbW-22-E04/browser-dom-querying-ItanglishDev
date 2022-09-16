@@ -38,8 +38,23 @@ colorGenerator()
 // unorderedList.style.display = 'flex'
 const mainHtml = document.querySelector('.main')
 
-mainHtml.style.display = 'flex'
-mainHtml.style.justifyContent = 'center'
 
 
+function modifyForDesktop(elem) {
+  if (elem.matches) {
+    mainHtml.style.display = 'flex'
+    mainHtml.style.justifyContent = 'center'
+  }
+  else {
+
+    mainHtml.style.display = 'flex'
+    mainHtml.style.flexDirection = 'column'
+    mainHtml.style.alignItems = 'center'
+
+  }
+}
+const atDeskTop = window.matchMedia('(min-width: 600px)')
+
+atDeskTop.addListener(modifyForDesktop)
+modifyForDesktop(atDeskTop)
 
