@@ -30,7 +30,16 @@ function colorGenerator() {
 
     el.style.color = randomColours[Math.floor(Math.random() * 3 + 1)]
   }
-
 }
-
 colorGenerator()
+
+const mainHtml = document.querySelector('.main')
+
+mainHtml.style.display = 'flex'
+mainHtml.style.justifyContent = 'center'
+
+// unorderedList.style.flexDirection = 'row'
+
+// unorderedList.style.display = 'flex'
+
+
