@@ -38,11 +38,6 @@ function colorGenerator() {
 }
 colorGenerator()
 
-// unorderedList.style.gap = ''
-
-// unorderedList.style.flexDirection = 'row'
-
-// unorderedList.style.display = 'flex'
 const mainHtml = document.querySelector('.main')
 const footer = document.querySelector('footer')
 const footerElements = document.getElementsByClassName('footer .food-desc')
@@ -80,10 +75,10 @@ const allergies = document.querySelector('.allergies')
 // allergies.style.textAlign = 'center'
 allergies.style.listStyleType = 'none'
 
-const allergiesEven = document.querySelector('.allergy-warning li:nth-child(even)')
+const allergiesEven = document.querySelectorAll('.allergy-warning')
 
-allergiesEven.style.backgroundColor = 'lightgreen'
-allergiesEven.style.maxWidth = '95%'
+// allergiesEven.style.backgroundColor = 'lightgreen'
+// allergiesEven.style.maxWidth = '95%'
 
 
 
