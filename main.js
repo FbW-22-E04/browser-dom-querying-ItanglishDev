@@ -10,18 +10,21 @@ body.style.alignItems = 'center'
 // mainHtml.style.alignItems = 'center'
 // document.body.style.fontFamily = '
 
+//            H1 CENTERED 
+
 const hOne = document.querySelector('h1')
 
 hOne.style.textAlign = 'center'
 
 const menuHeadings = document.querySelectorAll('.category')
-
+// menuHeadings.style.gap = '1rem'
 // if (menuHeadings) {
 for (const el of menuHeadings) {
 
   el.style.color = 'red'
   el.style.fontFamily = 'Times New Roman'
   el.style.fontSize = "1.6rem"
+  // el.style.gap = '3rem'
 }
 
 const randomColours = ['Azure', 'cornSilk', 'BlanchedAlmond', 'BurlyWood', 'CornflowerBlue']
@@ -70,10 +73,22 @@ const warningAtEnd = document.getElementById('warning')
 
 warningAtEnd.style.fontSize = '2rem'
 
-const allergies = document.querySelector('.allergies')
+const allergies = document.querySelectorAll('.allergy-info')
+console.log(allergies);
+for (e of allergies) {
+  console.log(e.textContent);
+  e.style.listStyleType = 'none'
+}
 
+const evenChildren = document.querySelectorAll('.allergies :nth-child(even)')
+// console.log(evenChildren);
+for (const e of evenChildren) {
+  e.style.backgroundColor = 'lightgreen'
+}
+// oddChildren.style.backgroundColor = 'green'
+// allergies.map(e => console.log(e))
 // allergies.style.textAlign = 'center'
-allergies.style.listStyleType = 'none'
+// allergies.style.listStyleType = 'none'
 
 const allergiesEven = document.querySelectorAll('.allergy-warning')
 
