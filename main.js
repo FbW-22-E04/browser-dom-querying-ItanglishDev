@@ -60,6 +60,7 @@ function modifyForDesktop(elem) {
 
     mainHtml.style.display = 'flex'
     // mainHtml.style.alignItems = 'center'
+    // warningAtEnd.style.fontSize = '1rem'
 
 
   }
@@ -72,11 +73,11 @@ modifyForDesktop(atDeskTop)
 const warningAtEnd = document.getElementById('warning')
 
 warningAtEnd.style.fontSize = '2rem'
-
 const allergies = document.querySelectorAll('.allergy-info')
-console.log(allergies);
+// console.log(allergies);
+
 for (e of allergies) {
-  console.log(e.textContent);
+  // console.log(e.textContent);
   e.style.listStyleType = 'none'
 }
 
@@ -85,18 +86,20 @@ const evenChildren = document.querySelectorAll('.allergies :nth-child(even)')
 for (const e of evenChildren) {
   e.style.backgroundColor = 'lightgreen'
 }
+
+const h3 = document.getElementsByClassName('food-desc')
+// h3.style.fontSize = 'large'
+for (const el of h3) {
+  el.style.fontSize = '1.8rem'
+
+}
+console.log(h3);
 // oddChildren.style.backgroundColor = 'green'
 // allergies.map(e => console.log(e))
 // allergies.style.textAlign = 'center'
 // allergies.style.listStyleType = 'none'
 
-const allergiesEven = document.querySelectorAll('.allergy-warning')
-
-// allergiesEven.style.backgroundColor = 'lightgreen'
-// allergiesEven.style.maxWidth = '95%'
-
-
-
+// const allergiesEven = document.querySelectorAll('.allergy-warning')
 // footer.style.flexDirection = 'column'
 // footer.style.display = 'flex'
 
