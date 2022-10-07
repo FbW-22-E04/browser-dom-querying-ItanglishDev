@@ -44,25 +44,32 @@ colorGenerator()
 const mainHtml = document.querySelector('.main')
 const footer = document.querySelector('footer')
 const footerElements = document.getElementsByClassName('footer .food-desc')
+const section = document.querySelectorAll('.food-desc')
 
 function modifyForDesktop(elem) {
   if (elem.matches) {
     mainHtml.style.display = 'flex'
     mainHtml.style.justifyContent = 'space-around'
     // footer.style.flexDirection = 'row'
+    footer.style.width = '40%'
     footer.style.display = 'flex'
+    footer.style.justifyContent = 'space-around'
     // footerElements.style.padding = '2px'
     // footerElements.style.justifyContent = 'space-between'
 
+    for (const el of section) {
+      el.style.marginTop = '2rem'
+    }
   }
   else {
     mainHtml.style.flexDirection = 'column'
-
+    footer.style.flexDirection = 'column'
+    // footer.style.gap = '10px'
     mainHtml.style.display = 'flex'
     // mainHtml.style.alignItems = 'center'
     // warningAtEnd.style.fontSize = '1rem'
-
-
+    // h3.style.marginTop = '1rem'
+    // section.style.marginTop = '2rem'
   }
 }
 const atDeskTop = window.matchMedia('(min-width: 600px)')
@@ -88,9 +95,16 @@ for (const e of evenChildren) {
 }
 
 const h3 = document.getElementsByClassName('food-desc')
+// footer.style.display = 'flex'
 // h3.style.fontSize = 'large'
 for (const el of h3) {
-  el.style.fontSize = '1.8rem'
+  el.style.border = '4px solid yellow'
+  el.style.width = '6rem'
+  el.style.height = '4rem'
+  el.style.textAlign = 'center'
+  el.style.alignItems = 'center'
+  el.style.justifyContent = 'center'
+  el.style.borderRadius = '50%'
 
 }
 console.log(h3);
